@@ -157,5 +157,36 @@ h3 {font-size: var(--fs-h3); }
 
 .my-services {
     background-color: var(--clr-dark);
+/*    background-image: url(../img/solarized8_dark_flat.png);
+    background-blend-mode: multiply;
+    background-size: cover;
+*/
     color: var(--clr-light);
+    text-align: center;
 }
+
+.section__title--services {
+    color: var(--clr-accent);
+}
+
+.service {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /* sibling selector, applies if there is sibling beside it in flow,
+       so does not apply when scaled down to mobile/single column view
+     */
+    .service + .service {
+        margin-left: 1em;
+    }
+}
+
+
