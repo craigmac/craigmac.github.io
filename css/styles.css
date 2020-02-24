@@ -1,0 +1,161 @@
+/* Calculate total sizing space give to content by including margin
+   and padding. Easier for humans to reason about and work with.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom CSS Properties */
+:root {
+
+    /* Using native CSS3+ custom properties instead of SASS/SASS-like
+       tools because with these we can dynamically alter them using
+       media queries.
+    */
+    --ff-primary: Helvetica, Arial, sans-serif;
+    --ff-secondary: monospace;
+
+    --fw-regular: 300;
+    --fw-bold: 900;
+
+    --clr-light: #eee;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    /* REM is relative to default root element font-size, usually
+       16px, rather than relative to parent font-size, 'em'.
+    */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    /* box-shadow for images, done in two layers for more realism:
+       first one is bit darker and we fade the second to add better
+       depth
+    */
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+          0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        /* Make larger fonts at >800px screen size */
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General Styles */
+body {
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block; /* fixes some issues that occur sometimes */
+    max-width: 100%; /* so don't overflow parents */
+}
+
+strong {font-weight: var(--fw-bold);}
+
+/* Typography
+   Using em measurements for padding and margins for text--relative to
+   parent container, rather than root container base size.
+
+*/
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {font-size: var(--fs-h1); }
+h2 {font-size: var(--fs-h2); }
+h3 {font-size: var(--fs-h3); }
+
+.section__title {margin-bottom: .25em; }
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+    padding: .5em 1em;
+    text-align: right;
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background-color: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+.section__title--intro strong {display: block;}
+
+/* Header */
+
+.nav {
+    /* temporary just for dev */
+    display: none;
+}
+
+/* Intro Section */
+
+.intro {
+    position: relative;
+}
+
+.intro__img {
+    box-shadow: var(--bs);
+}
+
+/* 300, 600, 900 min-widths are good breakpoints to start with
+   and tweak from there, but not hard-and-fast rule.
+*/
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        /* at bigger size, keep this section centered by using
+        min-content so section will match width of content inside, and
+        then using margin trick to auto-center left-to-right
+        */
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img {
+        grid-area: img;
+        /* so it never disappears because of min-content property */
+        min-width: 200px;
+
+    }
+
+    .section__subtitle--intro {
+        align-self: start; /* don't expand vertically */
+
+    }
+}
+
+/* Section - My Services */
+
+.my-services {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
