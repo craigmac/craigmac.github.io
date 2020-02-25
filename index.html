@@ -1,46 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <!-- Meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Craig MacEachern - Portfolio</title>
+
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+        <!-- Stylesheets -->
         <link href="./css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     </head>
+
     <body>
-        <header>
+        <!-- Header and Navigation -->
+        <header class="header">
             <div class="logo">
+                <!-- TODO: use figure here instead? -->
                 <img src="img/logo.png" alt="Website logo."/>
             </div>
             <button class="nav-toggle" aria-label="toggle-navigation">
-                <span class="hamburger"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Introduction -->
+        <!-- Introduction Section-->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
+            <h1 class="section-title section-title--intro">
                 Hi, I am <strong>Craig MacEachern</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">
+            <p class="section-subtitle section-subtitle--intro">
                 front-end dev
             </p>
-            <img src="img/craig1.jpg" alt="Picture of Craig MacEachern." class="intro__img">
+            <!-- TODO: use figure here instead? -->
+            <img src="img/craig1.jpg" alt="Picture of Craig MacEachern." class="intro-img">
         </section>
 
         <!-- Services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
+            <h2 class="section-title section-title--services">What I do</h2>
             <div class="services">
                 <div class="service">
                     <h3>Full-stack Development</h3>
@@ -62,44 +71,40 @@
         </section>
 
         <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">
+            <h2 class="section-title section-title--about">
                 Who I am
-                <p class="section__subtitle section__subtitle--about">
+                <p class="section-subtitle section-subtitle--about">
                     Subtitle goes here!
                 </p>
             </h2>
-            <div class="about-me__body">
+            <div class="about-me-body">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, dicta nihil eveniet necessitatibus. Aliquid impedit laudantium quae mollitia incidunt! Beatae quidem cumque incidunt fugiat, voluptates doloribus fuga assumenda itaque eum. </p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi non impedit quo atque dolorum, doloribus porro minima libero consectetur, alias perspiciatis maxime incidunt magni voluptate magnam et! Libero, sequi.</p>
             </div>
-            <img src="img/craig2.jpg" alt="Another picture of Craig MacEachern." class="about-me__img">
+            <img src="img/craig2.jpg" alt="Another picture of Craig MacEachern." class="about-me-img">
         </section>
 
         <!-- Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">Work Examples</h2>
-            <p class="section__subtitle section__subtitle--work">A curated selection of my work</p>
+            <h2 class="section-title section-title--work">Work Examples</h2>
+            <p class="section-subtitle section-subtitle--work">A curated selection of my work</p>
 
             <div class="portfolio">
                 <!-- Portfolio Item 1 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio1.jpg" alt="" class="portfolio__img">
+                <a href="prong.html" class="portfolio-item">
+                    <img src="img/prong.jpeg" alt="" class="portfolio-img">
                 </a>
 
                 <!-- Portfolio Item 2 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio2.jpg" alt="" class="portfolio__img">
+                <a href="records-manager.html" class="portfolio-item">
+                    <img src="img/records-manager.jpeg" alt="" class="portfolio-img">
                 </a>
 
                 <!-- Portfolio Item 3 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio3.jpg" alt="" class="portfolio__img">
+                <a href="openroll.html" class="portfolio-item">
+                    <img src="img/openroll-1.jpeg" alt="" class="portfolio-img">
                 </a>
 
-                <!-- Portfolio Item 4 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio4.jpg" alt="" class="portfolio__img">
-                </a>
             </div>
         </section>
 
@@ -107,18 +112,18 @@
         <footer>
             <a href="mailto:craigm@fastmail.com" class="footer-link">craigm@fastmail.com</a>
             <ul class="social-list">
-                <li class="social-list__item">
-                    <a href="https://codepen.io" class="social-list__link">
+                <li class="social-list-item">
+                    <a href="https://codepen.io" class="social-list-link">
                         <i class="fab fa-codepen"></i>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a href="https://www.github.com" class="social-list__link">
+                <li class="social-list-item">
+                    <a href="https://www.github.com" class="social-list-link">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a href="https://linkedin.com" class="social-list__link">
+                <li class="social-list-item">
+                    <a href="https://linkedin.com" class="social-list-link">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
