@@ -51,6 +51,12 @@
 }
 
 /* General Styles */
+
+html {
+    /* so clicking on nav link scrolls there instead of abrupt jump */
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-light);
     color: var(--clr-dark);
@@ -154,6 +160,18 @@ header {
     z-index: 1000;
 }
 
+
+/* applies when nav-open class set by JS event, moves nav back from
+   off screen in x axis
+*/
+.nav-open .nav {
+    transform: translateX(0%);
+}
+
+.nav-open .nav-toggle {
+    position: fixed; /* fixes so when you scroll when nav open it stays put */
+}
+
 .hamburger {
     display: block;
     position: relative;
@@ -162,7 +180,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -213,13 +231,11 @@ header {
     padding: 0;
 }
 
-.nav__item {}
-
 .nav__link {
-    color: var(--clr-light);
+    color: inherit;
     text-decoration: none;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h2);
 }
 
 .nav__link:hover {
@@ -426,4 +442,16 @@ footer a {
 
 .social-list__link {
     padding: .5em;
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
 }
