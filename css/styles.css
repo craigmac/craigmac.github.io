@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Custom CSS Properties */
+/* =====================================================================
+   Custom CSS Properties -- say no to SCSS
+   =====================================================================*/
+
 :root {
 
     --font-primary: Helvetica, Arial, sans-serif;
@@ -46,7 +49,9 @@
     }
 }
 
-/* General Styles */
+/* =====================================================================
+   General Styles
+   =====================================================================*/
 
 html {
     scroll-behavior: smooth;
@@ -68,6 +73,7 @@ section {
 img {
     display: block; /* fixes some issues that occur sometimes */
     max-width: 100%; /* don't overflow parents */
+    border-radius: 2px;
 }
 
 strong {font-weight: var(--font-weight-bold);}
@@ -80,7 +86,9 @@ strong {font-weight: var(--font-weight-bold);}
 
 
 
-/* Buttons */
+/* =====================================================================
+   Buttons
+   =====================================================================*/
 
 .btn {
     display: inline-block;
@@ -100,11 +108,12 @@ strong {font-weight: var(--font-weight-bold);}
     transform: scale(1.1);
 }
 
-/* Typography
+/* =====================================================================
+   Typography
    Using em measurements for padding and margins for text--relative to
-   parent container, rather than root container base size.
+   parent font-size, rather than root container (html element) font-size.
+   =====================================================================*/
 
-*/
 h1,
 h2,
 h3 {
@@ -134,7 +143,9 @@ h3 {font-size: var(--h3); }
 
 .section-title--intro strong {display: block;}
 
-/* Header */
+/*  =====================================================================
+    Header
+    =====================================================================*/
 
 .header {
     display: flex;
@@ -214,21 +225,20 @@ h3 {font-size: var(--h3); }
 
 }
 
+/*  =====================================================================
+    Intro Section
+    =====================================================================*/
 
-
-
-/* Intro Section */
-
-/*.intro {
-    position: relative;
+.section-intro {
+    padding: 2em 2em 5em 2em;
 }
-*/
+
 .intro-img {
     box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
-    .intro {
+    .section-intro {
         display: grid;
         /* at bigger size, keep this section centered by using
         min-content so section will match width of content inside
@@ -254,7 +264,9 @@ h3 {font-size: var(--h3); }
     }
 }
 
-/* Section - My Services */
+/* =====================================================================
+   Services Section
+   =====================================================================*/
 
 .my-services {
     background-color: var(--clr-dark);
@@ -329,7 +341,9 @@ h3 {font-size: var(--h3); }
     }
 }
 
-/* Work examples section */
+/* =====================================================================
+   Work examples section
+   =====================================================================*/
 
 .my-work {
     background-color: var(--clr-dark);
@@ -369,9 +383,11 @@ h3 {font-size: var(--h3); }
     opacity: .75;
 }
 
-/* Footer */
+/* =====================================================================
+   Footer
+   =====================================================================*/
 
-footer {
+.footer {
     background-color: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
@@ -379,7 +395,7 @@ footer {
     font-size: var(--h3);
 }
 
-footer a {
+.footer a {
     color: inherit;
     text-decoration: none;
 }
