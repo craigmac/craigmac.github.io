@@ -127,31 +127,34 @@ h3 {
     font-size: var(--h3);
 }
 
-.section-title {
+.title {
     font-family: var(--font-accent);
 
     margin-bottom: .25em;
 }
 
-.section-subtitle {
+.subtitle {
     margin: 0;
     font-size: var(--h3);
     padding: .5em 1em;
     text-align: right;
 }
 
-.section-subtitle--intro,
-.section-subtitle--about {
+.subtitle-hero,
+.subtitle--about {
     background-color: var(--clr-accent);
     font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+
     margin-bottom: 1em;
     /* To bump up contrast to meet audit criteria */
     color: black;
 }
 
-.section-subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--font-weight-bold);
+.subtitle-portfolio {
+    color: var(--clr-dark);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
     margin-bottom: 2em;
     text-align: center;
 }
@@ -242,12 +245,12 @@ header {
     Intro Section
     =====================================================================*/
 
-.section-intro {
+.hero {
     padding: 2em 2em 5em 2em;
 }
 
 @media (min-width: 600px) {
-    .section-intro {
+    .hero {
         display: grid;
         /* at bigger size, keep this section centered by using
         min-content so section will match width of content inside
@@ -261,7 +264,7 @@ header {
         grid-template-columns: min-content max-content;
     }
 
-    .section-subtitle--intro {
+    .subtitle-hero {
         align-self: start; /* don't expand vertically */
     }
 }
@@ -285,13 +288,13 @@ header {
    Services Section
    =====================================================================*/
 
-.my-services {
+.skills {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
 }
 
-.section-title--services {
+.title-skills {
     color: var(--clr-accent);
     margin-bottom: 1em;
 }
@@ -299,9 +302,15 @@ header {
 .services {
     margin-bottom: 4em;
 }
+
+.service-title {
+    text-align: center;
+}
+
 .service {
     max-width: 600px;
     margin: 0 auto;
+    text-align: left;
 }
 
 /* When we reach at least min-width */
@@ -322,43 +331,33 @@ header {
     }
 }
 
-/* About me / who i am section */
-
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-@media (min-width: 600px) {
-    /* Create new layout at >= min-width for desktops */
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas:
-            "title title"
-            "subtitle subtitle"
-            "text text";
-            grid-column-gap: 2em;
-    }
-
-    .section-title--about {
-        grid-area: title;
-
-    }
-}
 
 /* =====================================================================
-   Work examples section
+    Portfolio
    =====================================================================*/
 
-.my-work {
-    background-color: var(--clr-dark);
+.portfolio {
+    background-color: var(--clr-light);
     color: var(--clr-light);
     text-align: center;
 
 }
 
-.portfolio {
+.title-portfolio {
+    color: var(--clr-dark);
+}
+
+/* The coloured horizontal bar after the title */
+.title-portfolio::after {
+    display: block;
+    content: '';
+    width: 25vw;
+    height: 2px;
+    background-color: var(--clr-accent);
+    margin: 1em auto 0;
+}
+
+.portfolio-images {
     display: grid;
     /* min width of 300px wide 1 column display on mobile,
     then grows if possible up to fill 'max-width'
@@ -400,6 +399,26 @@ header {
 .portfolio-item:focus .portfolio-img {
     transform: scale(1.2);
 }
+
+/* =====================================================================
+   Résume
+   =====================================================================*/
+.resume {
+    background-color: var(--clr-accent);
+    text-align: center;
+}
+
+.title-resume {
+    color: var(--clr-light);
+    margin-bottom: 4em auto;
+}
+
+.resume-content {
+    max-width: 60ch;
+    margin: 2em auto;
+    color: var(--clr-dark);
+}
+
 
 /* =====================================================================
    Footer
