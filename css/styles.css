@@ -138,18 +138,18 @@ h3 {
     margin: 0;
     font-size: var(--h3);
     padding: .5em 1em;
-    text-align: center;
+    margin-left: auto;
 }
 
-.subtitle-hero,
-.subtitle--about {
+.subtitle-hero {
     background-color: var(--clr-accent);
     font-family: var(--font-primary);
     font-weight: var(--font-weight-regular);
-    margin-bottom: 1em;
-    /* To bump up contrast to meet audit criteria */
     color: black;
+    align-self: center;
 }
+
+
 
 .subtitle-portfolio {
     color: var(--clr-dark);
@@ -201,7 +201,7 @@ header {
     transform: scale(2);
 }
 
-.nav {
+#navbar {
     position: fixed;
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -286,19 +286,22 @@ header {
 }
 
 .headline {
-    /*display: flex;*/
+    display: flex;
     background-color: var(--clr-accent);
 
 }
 
 .headline-list {
     display: flex;
-
+    padding: .5em;
+    margin: .5em;
+    align-items: center;
 }
 
 .headline-list-item {
     list-style: none;
-    margin: 0;
+    margin-right: .5em;
+    padding: .5em;
 }
 
 .headline-icon {
