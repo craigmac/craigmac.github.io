@@ -251,6 +251,7 @@ header {
     flex-direction: column;
     margin: 0 auto;
     max-width: 1000px;
+    height: 100vh;
 }
 
 /*@media (min-width: 600px) {

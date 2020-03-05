@@ -8,7 +8,11 @@
         <meta name="KEYWORDS" content="Craig MacEachern, pythonista, developer, cpp developer, archivist, librarian, developer, homepage">
         <title>Craig MacEachern - Portfolio</title>
 
+        <!-- TODO: Remove for production -->
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+        <!-- TODO: Remove for production -->
+
 
         <!-- Stylesheets -->
         <link href="./css/styles.css" rel="stylesheet">
@@ -23,9 +27,9 @@
             <button class="nav-toggle" aria-label="toggle-navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <nav class="nav">
+            <nav id="navbar">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#welcome-section" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li class="nav-item"><a href="#resume" class="nav-link">Résume</a></li>
@@ -34,24 +38,24 @@
         </header>
 
         <!-- Hero-->
-        <section class="hero" id="home">
+        <section class="hero" id="welcome-section">
             <h1 class="title name first-name">
                 Craig<span class="name last-name">MacEachern<span>
             </h1>
             <div class="headline">
                 <ul class="headline-list">
                     <li class="headline-list-item">
-                        <a href="https://www.github.com/crajun" class="social-list-link">
+                        <a href="https://www.github.com/crajun" class="social-list-link" id="profile-link" target="_blank" rel="noreferrer noopener">
                             <i class="fab fa-github headline-icon"></i>
                         </a>
                     </li>
                     <li class="headline-list-item">
-                        <a href="https://codepen.io/crajun/collections/" class="social-list-link">
+                        <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank" rel="noreferrer noopener">
                             <i class="fab fa-codepen headline-icon"></i>
                         </a>
                     </li>
                     <li class="headline-list-item">
-                        <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link">
+                        <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank" rel="noreferrer noopener">
                             <i class="fab fa-linkedin headline-icon"></i>
                         </a>
                     </li>
@@ -147,17 +151,17 @@
             <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top" class="footer-link">craigm@fastmail.com</a>
             <ul class="social-list">
                 <li class="social-list-item">
-                    <a href="https://codepen.io/crajun/collections/" class="social-list-link">
+                    <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank" rel="noreferrer noopener">
                         <i class="fab fa-codepen"></i>
                     </a>
                 </li>
                 <li class="social-list-item">
-                    <a href="https://www.github.com/crajun" class="social-list-link">
+                    <a href="https://www.github.com/crajun" class="social-list-link" target="_blank" rel="noreferrer noopener">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list-item">
-                    <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link">
+                    <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank" rel="noreferrer noopener">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
