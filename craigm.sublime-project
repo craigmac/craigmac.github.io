@@ -4,5 +4,15 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings":
+	{
+		"LSP":
+		{
+			"typescript-language-server":
+			{
+				"enabled": true
+			}
+		}
+	}
 }
