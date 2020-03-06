@@ -183,7 +183,7 @@ header {
 /* applies when nav-open class set by JS event, moves nav back from
    off screen in x axis
 */
-.nav-open .nav {
+.nav-open #navbar {
     transform: translateX(0%);
 }
 
