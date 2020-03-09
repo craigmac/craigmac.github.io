@@ -217,6 +217,13 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
+/* Desktop sizes */
+/* @media (min-width: 600px) {
+    .nav-toggle {
+        display: none;
+    }
+} */
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -244,8 +251,8 @@ header {
     Intro Section
     =====================================================================*/
 
-.hero {
-    padding: 2em 2em 5em 2em;
+    .hero {
+    padding: 8em 2em 5em 2em;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
