@@ -251,7 +251,7 @@ header {
     Intro Section
     =====================================================================*/
 
-    .hero {
+.hero {
     padding: 8em 2em 5em 2em;
     display: flex;
     flex-direction: column;
@@ -298,6 +298,14 @@ header {
     transform: scale(1.5);
     color: var(--clr-dark);
     margin: 0;
+}
+
+.arrow-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90vh;
 }
 
 /* =====================================================================
@@ -387,11 +395,7 @@ header {
 }
 
 .portfolio-item {
-    /* grow within the box, don't show the overflow when it zooms in */
     overflow: hidden;
-    /* HACK: some images will not be perfectly square, so we fill leftover space by
-    letter bg color come through */
-    background-color: #eee;
 }
 
 .portfolio-img {
@@ -415,6 +419,10 @@ header {
 .portfolio-img:hover,
 .portfolio-item:focus .portfolio-img {
     transform: scale(1.2);
+}
+
+.chev-up {
+    color: var(--clr-dark);
 }
 
 /* =====================================================================
