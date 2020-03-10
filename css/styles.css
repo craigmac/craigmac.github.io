@@ -418,28 +418,6 @@ header {
 }
 
 /* =====================================================================
-   Résume
-   =====================================================================*/
-.resume {
-    background-color: var(--clr-accent);
-    text-align: center;
-}
-
-.title-resume {
-    color: var(--clr-light);
-    margin-bottom: 4em auto;
-    font-family: var(--font-accent);
-}
-
-.resume-content {
-    max-width: 60ch;
-    margin: 2em auto;
-    color: var(--clr-dark);
-    font-family: var(--font-primary);
-}
-
-
-/* =====================================================================
    Footer
    =====================================================================*/
 
