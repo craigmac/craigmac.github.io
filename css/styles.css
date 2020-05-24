@@ -1,401 +1,446 @@
 *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+  }
 
-/* =====================================================================
-   Custom CSS Properties
-   =====================================================================*/
+  /* =====================================================================
+  Custom CSS Properties
+  =====================================================================*/
 
 :root {
-    --font-primary: 'Open Sans', sans-serif;
-    --font-accent: 'Roboto Slab',serif;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-accent: 'Roboto Slab',serif;
 
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --font-weight-dark: 900;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-dark: 900;
 
-    --clr-light: #eee;
-    --clr-dark: #343d46;
-    --clr-accent: #c694c6;
+  --clr-light: #eee;
+  --clr-dark: #343d46;
+  --clr-accent: #c694c6;
 
-    --h1: 3rem;
-    --h2: 2.25rem;
-    --h3: 1.25rem;
-    --font-body: 1rem;
+  --h1: 3rem;
+  --h2: 2.25rem;
+  --h3: 1.25rem;
+  --font-body: 1rem;
 
-    /* box-shadow for images, done in two layers for more realism:
-       first one is bit darker and we fade the second to add better
-       depth
-    */
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-          0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  /* box-shadow for images, done in two layers for more realism:
+  first one is bit darker and we fade the second to add better
+  depth
+   */
+--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 600px) {
-    :root {
-        /* Make larger fonts at >=min-width screen size */
-        --font-body: 1.125rem;
-        --h1: 4.5rem;
-        --h2: 3.75rem;
-        --h3: 1.5rem;
-        line-height: 1.4;
-    }
+@media (min-width: 425px) {
+  :root {
+    /* Make larger fonts at >=min-width screen size */
+    --font-body: 1.125rem;
+    --h1: 4.5rem;
+    --h2: 3.75rem;
+    --h3: 1.5rem;
+    line-height: 1.4;
+  }
 }
 
 /* =====================================================================
-   General Styles
-   =====================================================================*/
+General Styles
+=====================================================================*/
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-    font-family: var(--font-primary);
-    font-size: var(--font-body);
-    line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  font-family: var(--font-primary);
+  font-size: var(--font-body);
+  line-height: 1.6;
 }
 
 section {
-    padding: 5em 2em;
+  padding: 5em 2em;
 }
 
 img {
-    display: block; /* fixes some issues that occur sometimes */
-    max-width: 100%; /* don't overflow parents */
-    border-radius: 2px;
+  display: block; /* fixes some issues that occur sometimes */
+  max-width: 100%; /* don't overflow parents */
+  border-radius: 2px;
 }
 
 /* when tab key pressed */
 :focus {
-    outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
 }
 
 
 
 /* =====================================================================
-   Buttons
-   =====================================================================*/
+Buttons
+=====================================================================*/
 
 .btn {
-    display: inline-block;
-    padding: .5em 2.5em;
-    background-color: var(--clr-accent);
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--font-weight-bold);
-    transition: transform 200ms ease-in-out;
+  display: inline-block;
+  padding: .5em 2.5em;
+  background-color: var(--clr-accent);
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--font-weight-bold);
+  transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* =====================================================================
-   Typography
-   Using em measurements for padding and margins for text--relative to
-   parent font-size, rather than root container (html element) font-size.
-   =====================================================================*/
+Typography
+Using em measurements for padding and margins for text--relative to
+parent font-size, rather than root container (html element) font-size.
+=====================================================================*/
 
 h1,
 h2,
 h3 {
-    line-height: 1;
+  line-height: 1;
 }
 
 h1 {
-    font-size: var(--h1);
+  font-size: var(--h1);
 }
 
 h2 {
-    font-size: var(--h2);
+  font-size: var(--h2);
 }
 
 h3 {
-    font-size: var(--h3);
+  font-size: var(--h3);
 }
 
 .title {
-    font-family: var(--font-accent);
-    margin-bottom: .25em;
+  font-family: var(--font-accent);
+  margin-bottom: .25em;
 }
 
 .subtitle {
-    font-size: var(--h3);
-    padding: .5em 1em;
-    margin-left: auto;
+  font-size: var(--h3);
+  padding: .5em 1em;
+  margin-left: auto;
 }
 
 .subtitle-hero {
-    background-color: var(--clr-accent);
-    font-family: var(--font-primary);
-    font-weight: var(--font-weight-regular);
-    color: black;
-    align-self: center;
+  background-color: var(--clr-accent);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  color: black;
+  align-self: center;
 }
 
 
 
 .subtitle-portfolio {
-    color: var(--clr-dark);
-    font-family: var(--font-primary);
-    font-weight: var(--font-weight-regular);
-    margin-bottom: 2em;
-    text-align: center;
+  color: var(--clr-dark);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: 2em;
+  text-align: center;
 }
 
 
 /*  =====================================================================
-    Header
-    =====================================================================*/
+Header
+=====================================================================*/
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+  background-color: var(--clr-dark);
+}
+
+nav {
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (min-width: 425px) {
+  .menu {
+    flex-direction: row;
+    flex-wrap:  wrap;
+    justify-content: center;
+  }
+}
+
+
+.menu li {
+  padding: 1em;
+}
+
+.menu li a {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.menu .logo a {
+  color: var(--clr-accent);
+}
+
+.logo a {
+  font-size: 1.5em;
+}
+
+.logo a:hover {
+  text-decoration: none;
 }
 
 /*  =====================================================================
-    Intro Section
-    =====================================================================*/
+Intro Section
+=====================================================================*/
 
 .hero {
-    padding: 8em 2em 5em 2em;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1000px;
-    height: 100vh;
+  padding: 8em 2em 5em 2em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vh;
 }
 
 .name {
-    text-transform: uppercase;
-    color: var(--clr-dark);
-    font-family: var(--font-accent);
-    letter-spacing: .125rem;
+  text-transform: uppercase;
+  color: var(--clr-dark);
+  font-family: var(--font-accent);
+  letter-spacing: .125rem;
 }
 
 .first-name {
-    font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-regular);
 }
 
 .last-name {
-    font-weight: var(--font-weight-dark);
+  font-weight: var(--font-weight-dark);
 }
 
 .headline {
-    display: flex;
-    background-color: var(--clr-accent);
+  display: flex;
+  background-color: var(--clr-accent);
 
 }
 
 .headline-list {
-    display: flex;
-    padding: .5em;
-    margin: .5em;
-    align-items: center;
+  display: flex;
+  padding: .5em;
+  margin: .5em;
+  align-items: center;
 }
 
 .headline-list-item {
-    list-style: none;
-    margin-right: .5em;
-    padding: .5em;
+  list-style: none;
+  margin-right: .5em;
+  padding: .5em;
 }
 
 .headline-icon {
-    transform: scale(1.5);
-    color: var(--clr-dark);
+  transform: scale(1.5);
+  color: var(--clr-dark);
 }
 
 .arrow-down {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 90vh;
 }
 
 /* =====================================================================
-   Services Section
-   =====================================================================*/
+Services Section
+=====================================================================*/
 
 .skills {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
 }
 
 .title-skills {
-    color: var(--clr-accent);
-    margin-bottom: 1em;
+  color: var(--clr-accent);
+  margin-bottom: 1em;
 }
 
 .services {
-    margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 .service-title {
-    text-align: center;
-    font-family: var(--font-accent);
+  text-align: center;
+  font-family: var(--font-accent);
 }
 
 .service {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+  max-width: 425px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-/* When we reach at least min-width */
-@media (min-width: 600px) {
+/* /* When we reach at least min-width */*/
+/* @media (min-width: 425px) {*/
 
-    /* Use flex row to create several columns instead of one at mobile-size */
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* sibling selector, applies if there is sibling beside it in flow,
-       so does not apply when scaled down to mobile/single column view
-     */
-    .service + .service {
-        margin-left: 1em;
-    }
-}
+/*   /* Use flex row to create several columns instead of one at mobile-size */*/
+/*   .services {*/
+/*     display: flex;*/
+/*     max-width: 1000px;*/
+/*     margin-left: auto;*/
+/*     margin-right: auto;*/
+/*   }*/
+/*   /* sibling selector, applies if there is sibling beside it in flow,*/
+/*   so does not apply when scaled down to mobile/single column view*/
+/*    */*/
+/* .service + .service {*/
+/*   margin-left: 1em;*/
+/* }*/
+/* }*/
 
 
 /* =====================================================================
-    Portfolio
-   =====================================================================*/
+Portfolio
+=====================================================================*/
 
 .portfolio {
-    background-color: var(--clr-light);
-    color: var(--clr-light);
-    text-align: center;
+  background-color: var(--clr-light);
+  color: var(--clr-light);
+  text-align: center;
 
 }
 
 .title-portfolio {
-    color: var(--clr-dark);
+  color: var(--clr-dark);
 }
 
 /* The coloured horizontal bar after the title */
 .title-portfolio::after {
-    display: block;
-    content: '';
-    width: 25vw;
-    height: 2px;
-    background-color: var(--clr-accent);
-    margin: 1em auto 0;
+  display: block;
+  content: '';
+  width: 25vw;
+  height: 2px;
+  background-color: var(--clr-accent);
+  margin: 1em auto 0;
 }
 
 .portfolio-images {
-    display: grid;
-    /* min width of 300px wide 1 column display on mobile,
-    then grows if possible up to fill 'max-width'
-      */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1000px;
-    margin: 0 auto;
-    grid-gap: .25em;
-    grid-auto-flow: dense;
+  display: grid;
+  /* min width of 300px wide 1 column display on mobile,
+  then grows if possible up to fill 'max-width'
+   */
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+max-width: 1000px;
+margin: 0 auto;
+grid-gap: .25em;
+grid-auto-flow: dense;
 }
 
 .portfolio-item {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .portfolio-img {
-    transition: transform 250ms ease-in-out;
-    border: 1px solid black;
+  transition: transform 250ms ease-in-out;
+  border: 1px solid black;
 }
 
 /* Used to pop the :focus state style outline above image when hitting Tab key
-   to navigate. We do it this way because Tab outlining only applies to links
-   i.e., <a href=""> not image tags.
-*/
+to navigate. We do it this way because Tab outlining only applies to links
+i.e., <a href=""> not image tags.
+ */
 .portfolio-item:focus {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 
 /* When focused with Tab keying or moused over
-   we scale the image inside
-*/
+we scale the image inside
+ */
 .portfolio-img:hover,
 .portfolio-item:focus .portfolio-img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .chev-up {
-    color: var(--clr-dark);
+  color: var(--clr-dark);
 }
 
 /* =====================================================================
-   Footer
-   =====================================================================*/
+Footer
+=====================================================================*/
 
 footer {
-    background-color: var(--clr-dark);
-    color: var(--clr-accent);
-    text-align: center;
-    padding: 2.5em 0;
-    font-size: var(--h3);
+  background-color: var(--clr-dark);
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--h3);
 }
 
 footer a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer-link {
-    font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
 }
 
 .footer-link:hover,
 .social-list-link:hover {
-    opacity: .7;
+  opacity: .7;
 }
 
 .footer-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
 }
 
 .social-list-item {
-    margin: 0 .5em;
+  margin: 0 .5em;
 }
 
 .social-list-link {
-    padding: .5em;
+  padding: .5em;
 }
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .portfolio-item-individual p {
-    max-width: 60ch;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
 }

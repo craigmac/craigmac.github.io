@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="device-width, initial-scale=1.0">
@@ -12,189 +12,185 @@
     <!-- Stylesheets -->
     <link href="./css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+                           integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,900&display=swap"
-        rel="stylesheet">
-</head>
+          rel="stylesheet">
+  </head>
 
-<body>
+  <body>
     <!-- Header and Navigation -->
     <header>
-        <button class="nav-toggle" aria-label="toggle-navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#welcome-section" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#resume" class="nav-link">Résume</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="#">craigm</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#cv" class="nav-link">C.V.</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Hero-->
-    <section class="hero" id="welcome-section">
-        <h1 class="title name first-name">
-            Craig<span class="name last-name">MacEachern<span>
-        </h1>
-        <div class="headline">
-            <ul class="headline-list">
-                <li class="headline-list-item">
-                    <a href="https://www.github.com/crajun" class="social-list-link" id="profile-link" target="_blank"
-                        rel="noreferrer noopener">
-                        <i class="fab fa-github headline-icon"></i>
-                    </a>
-                </li>
-                <li class="headline-list-item">
-                    <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank"
-                        rel="noreferrer noopener">
-                        <i class="fab fa-codepen headline-icon"></i>
-                    </a>
-                </li>
-                <li class="headline-list-item">
-                    <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank"
-                        rel="noreferrer noopener">
-                        <i class="fab fa-linkedin headline-icon"></i>
-                    </a>
-                </li>
-                <li class="headline-list-item">
-                    <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top"
-                        class="footer-link">
-                        <i class="fas fa-envelope headline-icon"></i>
-                    </a>
-                </li>
-            </ul>
-            <p class="subtitle subtitle-hero">
-                full-stack developer
-            </p>
-        </div>
-        <div class="arrow-down" id=#arrow-down>
-            <a href="#skills" class="nav-link">
-                <i class="fas fa-chevron-down"></i>
-            </a>
+    <!-- <section class="hero" id="about">-->
+    <!--   <h1 class="title name first-name">-->
+    <!--     Craig<span class="name last-name">MacEachern<span>-->
+    <!--   </h1>-->
+    <!--   <div class="headline">-->
+    <!--     <ul class="headline-list">-->
+    <!--       <li class="headline-list-item">-->
+    <!--         <a href="https://www.github.com/crajun" class="social-list-link" id="profile-link" target="_blank"-->
+    <!--                                                                                            rel="noreferrer noopener">-->
+    <!--           <i class="fab fa-github headline-icon"></i>-->
+    <!--         </a>-->
+    <!--       </li>-->
+    <!--       <li class="headline-list-item">-->
+    <!--         <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank"-->
+    <!--                                                                                   rel="noreferrer noopener">-->
+    <!--           <i class="fab fa-codepen headline-icon"></i>-->
+    <!--         </a>-->
+    <!--       </li>-->
+    <!--       <li class="headline-list-item">-->
+    <!--         <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank"-->
+    <!--                                                                                    rel="noreferrer noopener">-->
+    <!--           <i class="fab fa-linkedin headline-icon"></i>-->
+    <!--         </a>-->
+    <!--       </li>-->
+    <!--       <li class="headline-list-item">-->
+    <!--         <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top"-->
+    <!--                                                                                 class="footer-link">-->
+    <!--           <i class="fas fa-envelope headline-icon"></i>-->
+    <!--         </a>-->
+    <!--       </li>-->
+    <!--     </ul>-->
+    <!--     <p class="subtitle subtitle-hero">-->
+    <!--     full-stack developer-->
+    <!--     </p>-->
+    <!--   </div>-->
+    <!--   <div class="arrow-down" id=#arrow-down>-->
+    <!--     <a href="#skills" class="nav-link">-->
+    <!--       <i class="fas fa-chevron-down"></i>-->
+    <!--     </a>-->
 
-        </div>
+    <!--   </div>-->
 
-    </section>
+    <!-- </section>-->
 
-    <!-- Skills -->
-    <section class="skills" id="skills">
-        <h2 class="title title-skills">Skills</h2>
-        <div class="services">
-            <div class="service">
-                <h3 class="service-title">Full-stack Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, repudiandae, praesentium! Quod
-                    aspernatur maiores dolor consectetur fugiat ad quia temporibus molestiae, illum voluptatibus
-                    pariatur ea quaerat obcaecati quisquam aperiam saepe.</p>
-            </div> <!-- / service -->
+    <!-- <!-1- Skills -1->-->
+    <!-- <section class="skills" id="skills">-->
+    <!--   <h2 class="title title-skills">Skills</h2>-->
+    <!--   <div class="services">-->
+    <!--     <div class="service">-->
+    <!--       <h3 class="service-title">Full-stack Development</h3>-->
+    <!--       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, repudiandae, praesentium! Quod-->
+    <!--       aspernatur maiores dolor consectetur fugiat ad quia temporibus molestiae, illum voluptatibus-->
+    <!--       pariatur ea quaerat obcaecati quisquam aperiam saepe.</p>-->
+    <!--     </div> <!-1- / service -1->-->
 
-            <div class="service">
-                <h3 class="service-title">Digital Archivist</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nam maiores repudiandae cupiditate
-                    molestias officia, fugit necessitatibus nesciunt debitis aut officiis ipsam facilis nemo nulla
-                    dolore cumque ullam doloribus eos!</p>
-            </div> <!-- / service -->
+    <!--     <div class="service">-->
+    <!--       <h3 class="service-title">Digital Archivist</h3>-->
+    <!--       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nam maiores repudiandae cupiditate-->
+    <!--       molestias officia, fugit necessitatibus nesciunt debitis aut officiis ipsam facilis nemo nulla-->
+    <!--       dolore cumque ullam doloribus eos!</p>-->
+    <!--     </div> <!-1- / service -1->-->
 
-            <div class="service">
-                <h3 class="service-title">STUFF!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum autem at in non dolor a beatae iste,
-                    laboriosam esse explicabo quasi minima dignissimos enim, veniam sapiente recusandae impedit
-                    asperiores est.</p>
-            </div> <!-- / service -->
-        </div> <!-- / services -->
+    <!--     <div class="service">-->
+    <!--       <h3 class="service-title">STUFF!</h3>-->
+    <!--       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum autem at in non dolor a beatae iste,-->
+    <!--       laboriosam esse explicabo quasi minima dignissimos enim, veniam sapiente recusandae impedit-->
+    <!--       asperiores est.</p>-->
+    <!--     </div> <!-1- / service -1->-->
+    <!--   </div> <!-1- / services -1->-->
 
-        <a href="#portfolio" class="nav-link">
-            <i class="fas fa-chevron-down"></i>
-        </a>
+    <!--   <a href="#portfolio" class="nav-link">-->
+    <!--     <i class="fas fa-chevron-down"></i>-->
+    <!--   </a>-->
 
-    </section>
+    <!-- </section>-->
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="title title-portfolio">Portfolio</h2>
-        <p class="subtitle subtitle-portfolio">A selection of my work</p>
+    <!-- <!-1- Portfolio -1->-->
+    <!-- <section class="portfolio" id="portfolio">-->
+    <!--   <h2 class="title title-portfolio">Portfolio</h2>-->
+    <!--   <p class="subtitle subtitle-portfolio">A selection of my work</p>-->
 
-        <div class="portfolio-images">
-            <!-- Portfolio Item 1 -->
-            <a href="https://github.com/crajun/prong" class="portfolio-item" target="_blank" rel="noopener noreferrer">
-                <img src="img/prong.jpeg" alt="" class="portfolio-img">
-            </a>
+    <!--   <div class="portfolio-images">-->
+    <!--     <!-1- Portfolio Item 1 -1->-->
+    <!--     <a href="https://github.com/crajun/prong" class="portfolio-item" target="_blank" rel="noopener noreferrer">-->
+    <!--       <img src="img/prong.jpeg" alt="" class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 2 -->
-            <a href="https://github.com/crajun/records-manager" class="portfolio-item" target="_blank"
-                rel="noopener noreferrer">
-                <img src="img/records-manager.jpeg" alt="" class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 2 -1->-->
+    <!--     <a href="https://github.com/crajun/records-manager" class="portfolio-item" target="_blank"-->
+    <!--                                                                                rel="noopener noreferrer">-->
+    <!--       <img src="img/records-manager.jpeg" alt="" class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 3 -->
-            <a href="https://github.com/crajun/openroll" class="portfolio-item" target="_blank"
-                rel="noopener noreferrer">
-                <img src="img/openroll-big.JPG" alt="" class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 3 -1->-->
+    <!--     <a href="https://github.com/crajun/openroll" class="portfolio-item" target="_blank"-->
+    <!--                                                                         rel="noopener noreferrer">-->
+    <!--       <img src="img/openroll-big.JPG" alt="" class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 4 -->
-            <a href="https://codepen.io/crajun/pen/NWPZRjP" target="_blank" rel="noopener noreferrer"
-                class="portfolio-item">
-                <img src="img/tribute-page.JPG" alt="Tribute page project" class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 4 -1->-->
+    <!--     <a href="https://codepen.io/crajun/pen/NWPZRjP" target="_blank" rel="noopener noreferrer"-->
+    <!--                                                                     class="portfolio-item">-->
+    <!--       <img src="img/tribute-page.JPG" alt="Tribute page project" class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 5 -->
-            <a href="https://codepen.io/crajun/pen/rNVLdqx" class="portfolio-item" target="_blank"
-                rel="noopener noreferrer">
-                <img src="img/landing-page.JPG" alt="Product landing page project." class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 5 -1->-->
+    <!--     <a href="https://codepen.io/crajun/pen/rNVLdqx" class="portfolio-item" target="_blank"-->
+    <!--                                                                            rel="noopener noreferrer">-->
+    <!--       <img src="img/landing-page.JPG" alt="Product landing page project." class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 6 -->
-            <a href="https://codepen.io/crajun/pen/bGdodrL" class="portfolio-item" target="_blank"
-                rel="noopener noreferrer">
-                <img src="img/technical-documentation.JPG" alt="Technical Documentation Page Project."
-                    class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 6 -1->-->
+    <!--     <a href="https://codepen.io/crajun/pen/bGdodrL" class="portfolio-item" target="_blank"-->
+    <!--                                                                            rel="noopener noreferrer">-->
+    <!--       <img src="img/technical-documentation.JPG" alt="Technical Documentation Page Project."-->
+    <!--                                                  class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item 7 -->
-            <a href="https://github.com/crajun/tkinter-breakout" class="portfolio-item" target="_blank"
-                rel="noopener noreferrer">
-                <img src="img/tkinter.JPG" alt="" class="portfolio-img">
-            </a>
+    <!--     <!-1- Portfolio Item 7 -1->-->
+    <!--     <a href="https://github.com/crajun/tkinter-breakout" class="portfolio-item" target="_blank"-->
+    <!--                                                                                 rel="noopener noreferrer">-->
+    <!--       <img src="img/tkinter.JPG" alt="" class="portfolio-img">-->
+    <!--     </a>-->
 
-            <!-- Portfolio Item Template-->
-            <!-- <a href="" class="portfolio-item" target="_blank" rel="noopener noreferrer">
-                <img src="" alt="" class="portfolio-img">
-            </a> -->
-        </div>
-        <a href="#welcome-section" class="nav-link chev-up">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </section>
+    <!--     <!-1- Portfolio Item Template-1->-->
+    <!--     <!-1- <a href="" class="portfolio-item" target="_blank" rel="noopener noreferrer">-->
+    <!--       <img src="" alt="" class="portfolio-img">-->
+    <!--       </a> -1->-->
+    <!--   </div>-->
+    <!--   <a href="#welcome-section" class="nav-link chev-up">-->
+    <!--     <i class="fas fa-chevron-up"></i>-->
+    <!--   </a>-->
+    <!-- </section>-->
 
-    <!-- Footer -->
-    <footer>
-        <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top"
-            class="footer-link">craigm@fastmail.com</a>
-        <ul class="social-list">
-            <li class="social-list-item">
-                <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank"
-                    rel="noreferrer noopener">
-                    <i class="fab fa-codepen"></i>
-                </a>
-            </li>
-            <li class="social-list-item">
-                <a href="https://www.github.com/crajun" class="social-list-link" target="_blank"
-                    rel="noreferrer noopener">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list-item">
-                <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank"
-                    rel="noreferrer noopener">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
+    <!-- <!-1- Footer -1->-->
+    <!-- <footer>-->
+    <!--   <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top"-->
+    <!--                                                                           class="footer-link">craigm@fastmail.com</a>-->
+    <!--   <ul class="social-list">-->
+    <!--     <li class="social-list-item">-->
+    <!--       <a href="https://codepen.io/crajun/collections/" class="social-list-link" target="_blank"-->
+    <!--                                                                                 rel="noreferrer noopener">-->
+    <!--         <i class="fab fa-codepen"></i>-->
+    <!--       </a>-->
+    <!--     </li>-->
+    <!--     <li class="social-list-item">-->
+    <!--       <a href="https://www.github.com/crajun" class="social-list-link" target="_blank"-->
+    <!--                                                                        rel="noreferrer noopener">-->
+    <!--         <i class="fab fa-github"></i>-->
+    <!--       </a>-->
+    <!--     </li>-->
+    <!--     <li class="social-list-item">-->
+    <!--       <a href="https://www.linkedin.com/in/cmaceachern" class="social-list-link" target="_blank"-->
+    <!--                                                                                  rel="noreferrer noopener">-->
+    <!--         <i class="fab fa-linkedin"></i>-->
+    <!--       </a>-->
+    <!--     </li>-->
+    <!--   </ul>-->
+    <!-- </footer>-->
 
-    <script src="js/index.js"></script>
-</body>
+    <!-- <script src="js/index.js"></script>-->
+  </body>
 
 </html>
