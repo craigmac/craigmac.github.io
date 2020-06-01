@@ -12,20 +12,55 @@ $h2: 2.25rem;
 $h3: 1.25rem;
 $body-font-size: 1rem;
 
-h1,
-h2,
-h3 {
-  line-height: 1;
+
+// h1,
+// h2,
+// h3 {
+//   line-height: 1;
+// }
+
+// h1 {
+//   font-size: $h1;
+// }
+
+// h2 {
+//   font-size: $h2;
+// }
+
+// h3 {
+//   font-size: $h3;
+// }
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
-h1 {
-  font-size: $h1;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-h2 {
-  font-size: $h2;
+.jumbotron h1 {
+  font-weight: 300;
 }
 
-h3 {
-  font-size: $h3;
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
 }
