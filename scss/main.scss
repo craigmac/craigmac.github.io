@@ -1,66 +1,12 @@
-$font-primary: 'Open Sans', sans-serif;
-$font-accent: 'Roboto Slab', serif;
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-$font-weight-dark: 900;
-$color-light: #eee;
-$color-dark: #343d46;
-$color-accent: #c694c6;
+// $body-bg: #eee;
+// $body-color: #343d46;
 
-$h1: 3rem;
-$h2: 2.25rem;
-$h3: 1.25rem;
-$body-font-size: 1rem;
+// $theme-colors: {
+//   "primary": #c694c6,
+//   "dark": #343d46,
+//   "light": #eee,
 
-
-// h1,
-// h2,
-// h3 {
-//   line-height: 1;
 // }
 
-// h1 {
-//   font-size: $h1;
-// }
-
-// h2 {
-//   font-size: $h2;
-// }
-
-// h3 {
-//   font-size: $h3;
-// }
-
-.jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron h1 {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: 0.25rem;
-}
+// OVerride any Bootstrap 4 SASS variables before importing
+@import 'node_modules/bootstrap/scss/bootstrap';
