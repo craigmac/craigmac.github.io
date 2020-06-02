@@ -26,49 +26,149 @@
     <title>Craig MacEachern - Portfolio</title>
   </head>
   <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">craigm</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsable -->
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-      <!-- Navigation -->
-      <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">craigm</a>
-          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collapsable -->
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              
-            </ul>
+    <!-- Main -->
+
+    <div class="container-sm">
+      <main role="main">
+        <div class="jumbotron text-center">
+          <h1 class="display-3">Hi, I'm Craig</h1>
+          <p class="lead">
+            Self-taught developer, former librarian, and martial artist.
+          </p>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a
+                href="https://www.github.com/crajun"
+                class="nav-link"
+                id="profile-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://codepen.io/crajun/collections/"
+                class="nav-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/cmaceachern"
+                class="nav-link"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca"
+                target="_top"
+                class="nav-link"
+              >
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <hr class="my-2" />
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#portfolio" role="button"
+              >View my work</a
+            >
+          </p>
+        </div>
+      </main>
+
+      <div class="container bg-dark">
+        <section id="portfolio">
+          <h2 class="display-2 text-center">Portfolio</h2>
+          <div class="row">
+            <!-- Small width and up go 3 wide, below we stack -->
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Prong!</h4>
+                <img
+                  src="./img/prong.jpeg"
+                  class="img-fluid"
+                  alt="Pong-clone example written in Python."
+                />
+                <p class="card-text">
+                  A pong-clone proof-of-concept written in Python, using Pygame.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">RM Toolkit</h4>
+                <img
+                  src="./img/records-manager.jpeg"
+                  class="img-fluid"
+                  alt="Records Management GUI image."
+                />
+                <p class="card-text">
+                  A records management GUI application written in Python/Tk.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Openroll</h4>
+                <img
+                  src="./img/openroll-big.JPG"
+                  class="img-fluid"
+                  alt="Image of Openroll application."
+                />
+                <p class="card-text">
+                  C++ and Qt 5.12 cross-platform application for Brazilian
+                  jiu-jitsu tournament matches.
+                </p>
+              </div>
+            </div>
           </div>
-        </nav>
-      </header>
-  
-      <!-- Main -->
-      
-      <div class="container">
-        <main role="main">
-          <div class="jumbotron text-center">
-            <h1 class="display-3">Hi, I'm Craig</h1>
-            <p class="lead">.</p>
-            <hr class="my-2">
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#portfolio" role="button">View my work</a>
-            </p>
-          </div>
-        </main>
+        </section>
       </div>
-    
-
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
