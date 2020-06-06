@@ -45,144 +45,102 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#home"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a ></li>
+              <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfolio</a> </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#cv">C.V.</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- Main -->
-
-    <div class="container-sm">
-      <main role="main">
-        <div class="jumbotron text-center">
-          <h1 class="display-3">Hi, I'm Craig</h1>
-          <p class="lead">
-            Self-taught developer, former librarian, and martial artist.
-          </p>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a
-                href="https://www.github.com/crajun"
-                class="nav-link"
-                id="profile-link"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://codepen.io/crajun/collections/"
-                class="nav-link"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <i class="fab fa-codepen"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.linkedin.com/in/cmaceachern"
-                class="nav-link"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca"
-                target="_top"
-                class="nav-link"
-              >
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-          <hr class="my-2" />
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#portfolio" role="button"
-              >View my work</a
-            >
-          </p>
-        </div>
-      </main>
-
-      <div class="container bg-dark">
-        <section id="portfolio">
-          <h2 class="display-2 text-center">Portfolio</h2>
-          <div class="row">
-            <!-- Small width and up go 3 wide, below we stack -->
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Prong!</h4>
-                <img
-                  src="./img/prong.jpeg"
-                  class="img-fluid"
-                  alt="Pong-clone example written in Python."
-                />
-                <p class="card-text">
-                  A pong-clone proof-of-concept written in Python, using Pygame.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">RM Toolkit</h4>
-                <img
-                  src="./img/records-manager.jpeg"
-                  class="img-fluid"
-                  alt="Records Management GUI image."
-                />
-                <p class="card-text">
-                  A records management GUI application written in Python/Tk.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Openroll</h4>
-                <img
-                  src="./img/openroll-big.JPG"
-                  class="img-fluid"
-                  alt="Image of Openroll application."
-                />
-                <p class="card-text">
-                  C++ and Qt 5.12 cross-platform application for Brazilian
-                  jiu-jitsu tournament matches.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <!-- Jumbotron -->
+    <div class="container-sm" style="height: 100vh; background-color: #eee;">
+      <div class="jumbotron text-center" style="background-color: #eee;" id="intro">
+        <h1 class="display-3">Hi, I'm Craig.</h1>
+        <p class="lead">
+          Self-taught developer, former librarian, and martial artist.
+        </p>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="https://www.github.com/crajun" class="nav-link" target="_blank" rel="noreferrer noopener"><i class="fab fa-github fa-2x"></i></a></li>
+          <li class="nav-item">
+            <a href="https://codepen.io/crajun/collections/" class="nav-link" target="_blank" rel="noreferrer noopener"><i class="fab fa-codepen fa-2x"></i></a></li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/cmaceachern" class="nav-link" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          <li class="nav-item">
+            <a href="mailto:craigm@fastmail.com?Subject=Inquiry%20from%20craigm.ca" target="_top" class="nav-link"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr class="my-2" />
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#portfolio" role="button">View my work</a>
+        </p>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container-sm" style="background-color: #eee;">
+        <h2 class="text-center mb-3 display-4">Portfolio</h2>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="img/openroll-big.JPG" alt="Openroll demo image.">
+            <div class="card-body">
+              <h4 class="card-title">Openroll</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/prong.jpeg" alt="Prong demo image.">
+            <div class="card-body">
+              <h4 class="card-title">Prong!</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/records-manager.jpeg" alt="RMTK demo image.">
+            <div class="card-body">
+              <h4 class="card-title">RMTK</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      
+    </footer>
+
+    <!-- Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<!-- TODO:
+* Align text in cards
+* Set colour on 'craigm'
+* set colour on links
+* bump up size of fa icons
+* change colour of primary button
+* change default bg colour
+* portfolio heading could use work
+* change portfolio background color
+* add descriptions to cards
+* cards should have a 'view' and 'source' buttons that work
+* make sure all links work
+* add footer with same fa links
+* add resume link to fa links and in nav bar and footer
+
+
+
+ -->
