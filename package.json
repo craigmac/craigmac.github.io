@@ -12,5 +12,9 @@
     "bootstrap": "^4.5.0",
     "bootstrap4": "0.0.1-security",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "2.0.5"
   }
 }
