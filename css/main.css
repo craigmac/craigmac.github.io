@@ -13,11 +13,16 @@
 /* To center in page using .h-100 we need this, see:
 https://stackoverflow.com/questions/42388989/bootstrap-4-center-vertical-and-horizontal-alignment
 */
+
 html,
 body {
   height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #eee;
+  background-color: #ddd;
 }
