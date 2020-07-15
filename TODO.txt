@@ -1,12 +1,9 @@
-website
+TODO:
+* craigm.ca and https://craigm.ca not working? only 'www.'
+sub-domain address seem to work
+* Add calculator placeholder card
+* Add pomodoro placeholder card
+* Lighthouse audit
+* Pull in only fab instead of whole thing
 
-  * complete "view" and "source" links
-  * add descriptions to cards
-  * add recent 2 codepens and write details on card
-
-  Prod-checklist:
-  * Lighthouse audit:
-  * Pull in only fab instead of whole thing
-  * webp for images to reduce sizes?
-
-  Maybe:
+Maybe:
