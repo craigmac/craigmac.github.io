@@ -1,22 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,900&display=swap");
 
-/*
-  "primary": #c694c6,
-  "dark": #343d46,
-  "light": #eee,
-*/
+* {
+  box-sizing: border-box;
+}
 
 .nav-link {
   color: #343d46;
-}
-
-/* To center in page using .h-100 we need this, see:
-https://stackoverflow.com/questions/42388989/bootstrap-4-center-vertical-and-horizontal-alignment
-*/
-
-html,
-body {
-  height: 100vh;
 }
 
 html {
@@ -24,5 +13,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   background-color: #ddd;
 }

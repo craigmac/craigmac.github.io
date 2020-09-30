@@ -1,9 +1,13 @@
 TODO:
-* craigm.ca and https://craigm.ca not working? only 'www.'
-sub-domain address seem to work
-* Add calculator placeholder card
-* Add pomodoro placeholder card
 * Lighthouse audit
 * Pull in only fab instead of whole thing
+* Projects area should be wrapping same height cards (line up layout),
+using max maybe 900px of width
+* Tab navigation should work for all
+* Click on images opens to working demo
+* Semantic tags:
+    * address
+    * name
+    * etc?
 
 Maybe:
