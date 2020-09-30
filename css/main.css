@@ -13,8 +13,44 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   height: 100vh;
   background-color: #fff;
+}
+
+.projects-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 250px);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: lightpink;
+  padding: 1rem;
+}
+
+.project-img {
+  height: 400px;
+  width: 100%;
+  background: wheat;
+  margin: 0.5em 0;
+}
+
+.jumbo-box {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  place-items: center;
+  background: #ddd;
+}
+
+.intro {
+  text-align: center;
+  border: 1px solid lightpink;
 }
