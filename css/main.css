@@ -2,10 +2,20 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-link {
+a {
   color: #343d46;
+}
+
+a:hover {
+  color: plum;
+}
+
+li {
+  list-style: none;
 }
 
 html {
@@ -15,16 +25,44 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  width: 90vw;
+  max-width: 1024px;
+  margin: 1rem auto;
   padding: 0;
   height: 100vh;
   background-color: #fff;
 }
 
-.projects-container {
+.welcome {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
+  place-items: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  background: #ddd;
+}
+
+.introduction {
+  margin: 0.5em;
+  text-align: center;
+}
+
+.navigation {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(3, 250px);
+  grid-template-columns: repeat(3, 400px);
 }
 
 .project-card {
@@ -40,17 +78,4 @@ body {
   width: 100%;
   background: wheat;
   margin: 0.5em 0;
-}
-
-.jumbo-box {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  place-items: center;
-  background: #ddd;
-}
-
-.intro {
-  text-align: center;
-  border: 1px solid lightpink;
 }

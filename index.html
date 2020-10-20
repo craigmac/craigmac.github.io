@@ -16,14 +16,15 @@
   </head>
 
   <body>
+    <main>
     <!-- Hi I'm Craig area -->
-    <header class="jumbo-box">
-      <div id="intro">
+    <header class="welcome">
+      <section class="introduction">
         <h1>Hi, I'm Craig.</h1>
         <p>Developer, librarian, and martial artist.</p>
-      </div>
-      <nav>
-        <ul>
+      </section>
+      <nav class="navigation">
+        <ul class="nav-ul">
           <li>
             <a href="https://www.github.com/craigmac" target="_blank" rel="noreferrer noopener">
               <i class="fab fa-github fa-2x"></i >
@@ -50,19 +51,19 @@
             </a>
           </li>
         </ul>
-        <button>View my work</button>
       </nav>
+      <button>View my work</button>
     </header>
     <!-- Portfolio -->
-    <main>
       <h2>Portfolio</h2>
       <p>View source or live preview using buttons below each project.</p>
-      <div class="projects-container">
+      <section class="projects">
         <!-- Openroll -->
         <div class="project-card">
           <h3>Openroll</h3>
           <p>
-            Openroll is a free and open-source scoreboard and match timer for IBJJF-rules Brazilian Jiu-Jitsu. It is not affiliated with the IBJJF in any way. I learned about:
+            Openroll is a free and open-source scoreboard and match timer for IBJJF-rules Brazilian Jiu-Jitsu. It is not
+            affiliated with the IBJJF in any way. I learned about:
             <ul>
               <li>C++ 14 and Qt 5.12.x;</li>
               <li>cross-platform packaging;</li>
@@ -71,7 +72,6 @@
             </ul>
           </p>
           <img class="project-img" src="img/openroll-big.JPG" alt="Openroll demo image." />
-
           <div class="project-links">
             <a href="https://github.com/craigmac/openroll/" class="btn btn-md btn-secondary" target="_blank" >
               Source
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-      </div>
+      </section>
     </main>
   </body>
 </html>
